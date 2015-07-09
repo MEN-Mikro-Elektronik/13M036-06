@@ -678,7 +678,7 @@ static int32 M36_Init(
 
 	}
 
-    DBGWRT_1((DBH, " M36_Init: driver build %s %s\n", __DATE__, __TIME__ ));
+    DBGWRT_1((DBH, " M36_Init: \n" ));
 
     /*------------------------------+
     |  load PLD                     |
