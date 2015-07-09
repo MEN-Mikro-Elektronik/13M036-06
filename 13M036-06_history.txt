@@ -1,6 +1,21 @@
 ===== [ History of fileset ART/13M036-06/13M036-06 ] =====
 
 
+commit 62fce680ff52928ddb7976500ebce6aa9d49dc0f
+Author: thomas.schnuerer <thomas.schnuerer@men>
+Date:   Thu Jul 9 15:16:54 2015 +0200
+
+    R: build failed under kernel 3.19, Ubuntu 14.10
+    M: removed DATE and TIME macros from M36_Init, they caused error "might prevent reproducable builds"
+
+commit a3444885ac0e259a221f10ee470a172c643186a9
+Author: thomas.schnuerer <thomas.schnuerer@men>
+Date:   Thu Mar 12 18:42:40 2015 +0100
+
+    initial commit
+
+------- end of cvs maintenance -----------
+
 -----[ Revision 2.3 ]-----
 [ 2014-12-03 11:58:05 by ts ]
 m36_blkread.c
@@ -21,7 +36,6 @@ M:1.a) added support for 64bit
 
 -----[ Revision 2.1 ]-----
 [ 2008-01-10 16:59:01 by ts ]
-a
 m36_drv.c:
 - driver supports both M36 and M36N
 - no PLD load performed if M36N detected
@@ -78,4 +92,3 @@ force 1.4
 -----[ Revision 1.1 ]-----
 [ 1998-11-27 15:35:13 by Schmidt ]
 Initial Revision
-
