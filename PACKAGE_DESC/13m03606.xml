@@ -3,7 +3,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="packagedesc.xsd">
 	<name>13m03606</name>
 	<description>MDIS5 driver package for MEN M36 M-Module</description>
-	<date>2015-07-09</date>
+	<date>2016-07-14</date>
 	<revision>2.4</revision>
 	<docroot>DRIVERS/MDIS_LL/M036/DOC/main.html</docroot>
 	<modellist>
