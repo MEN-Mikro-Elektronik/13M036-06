@@ -549,24 +549,24 @@ static int32 M36_Init(
 		llHdl->idCheck = FALSE;
 
 	/* SINGLE_ENDED */
-    if ((error = DESC_GetUInt32(llHdl->descHdl, TRUE,
+	if ((error = DESC_GetUInt32(llHdl->descHdl, TRUE,
 								&llHdl->singleEnded, "SINGLE_ENDED")) &&
 		error != ERR_DESC_KEY_NOTFOUND)
 		return( Cleanup(llHdl,error) );
 
-    if( llHdl->singleEnded == TRUE )
-        llHdl->chNumber = CH_NUMBER_SINGLE;
-    else
-        llHdl->chNumber = CH_NUMBER_DIFF;
+	if( llHdl->singleEnded == TRUE )
+		llHdl->chNumber = CH_NUMBER_SINGLE;
+	else
+		llHdl->chNumber = CH_NUMBER_DIFF;
 
 	/* EXT_TRIG */
-    if ((error = DESC_GetUInt32(llHdl->descHdl, TRUE,
-								&llHdl->extTrig, "EXT_TRIG")) &&
+	if ((error = DESC_GetUInt32(llHdl->descHdl, TRUE,
+						&llHdl->extTrig, "EXT_TRIG")) &&
 		error != ERR_DESC_KEY_NOTFOUND)
 		return( Cleanup(llHdl,error) );
 
-		if (llHdl->extTrig > 1)
-			return( Cleanup(llHdl,ERR_LL_ILL_PARAM) );
+	if (llHdl->extTrig > 1)
+		return( Cleanup(llHdl,ERR_LL_ILL_PARAM) );
 
 	/* BIPOLAR */
 	if ((error = DESC_GetUInt32(llHdl->descHdl, 0, &llHdl->bipolar,
