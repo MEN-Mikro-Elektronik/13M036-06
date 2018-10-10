@@ -44,8 +44,6 @@
  * (c) Copyright 1998 by MEN mikro elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
 
-static const char RCSid[]="$Header: /dd2/CVSR/COM/DRIVERS/MDIS_LL/M036/TOOLS/M36_READ/COM/m36_read.c,v 1.7 2009/09/23 17:48:25 MRoth Exp $";
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

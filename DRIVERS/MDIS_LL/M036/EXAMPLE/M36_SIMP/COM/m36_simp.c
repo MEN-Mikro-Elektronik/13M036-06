@@ -44,8 +44,6 @@
  * (c) Copyright 1998 by MEN mikro elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
 
-static const char RCSid[]="$Id: m36_simp.c,v 1.7 2009/09/23 17:48:23 MRoth Exp $";
-
 #include <stdio.h>
 #include <string.h>
 #include <MEN/men_typs.h>

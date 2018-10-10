@@ -51,8 +51,6 @@
  * (c) Copyright 1998 by MEN mikro elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
 
-static const char RCSid[]="$Header: /dd2/CVSR/COM/DRIVERS/MDIS_LL/M036/TOOLS/M36_BLKREAD/COM/m36_blkread.c,v 1.8 2014/12/03 11:52:57 ts Exp $";
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

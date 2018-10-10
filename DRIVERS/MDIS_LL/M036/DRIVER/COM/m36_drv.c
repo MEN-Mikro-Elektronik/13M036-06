@@ -111,8 +111,6 @@
  * (c) Copyright 1998 by MEN mikro elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
 
-static const char RCSid[]="$Id: m36_drv.c,v 1.11 2010/09/21 17:47:59 ts Exp $";
-
 #define _NO_LL_HANDLE		/* ll_defs.h: don't define LL_HANDLE struct */
 
 #include <MEN/men_typs.h>   /* system dependend definitions   */
