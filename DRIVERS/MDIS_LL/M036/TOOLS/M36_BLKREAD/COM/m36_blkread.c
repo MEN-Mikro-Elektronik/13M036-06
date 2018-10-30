@@ -13,43 +13,23 @@
  *     Required: usr_oss.l usr_utl.l
  *     Switches: -
  *
- *-------------------------------[ History ]---------------------------------
- *
- * $Log: m36_blkread.c,v $
- * Revision 1.8  2014/12/03 11:52:57  ts
- * R: block read returned wrong values, not considering gain factor
- * M: corrected wrong calculation, removed gain from it (is already set as
- *    a SetStat on M36N)
- *
- * Revision 1.7  2009/09/23 17:48:27  MRoth
- * R: Porting to MDIS5
- * M: a) added support for 64bit (MDIS_PATH)
- *    b) added casts to avoid compiler warnings
- *
- * Revision 1.6  2009/05/26 14:48:19  ts
- * R: program build failed under windows
- * M: added specifier __MAPILIB to declaration of signal handler
- *
- * Revision 1.5  2004/04/15 12:19:59  cs
- * Minor modifications for MDIS4/2004 conformity
- *       added stdlib.h and string.h
- *
- * Revision 1.4  2002/06/13 14:00:01  kp
- * cosmetics
- *
- * Revision 1.3  1998/11/26 16:18:40  Schmidt
- * option for voltage and current measurement added
- *
- * Revision 1.2  1998/11/18 14:43:13  see
- * enable interrupts after highwater signal and info output
- * read loop: UOS_Delay(500) removed
- *
- * Revision 1.1  1998/11/17 15:31:03  Schmidt
- * Added by mcvs
- *
  *---------------------------------------------------------------------------
  * (c) Copyright 1998 by MEN mikro elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #include <stdio.h>
 #include <stdlib.h>

@@ -14,35 +14,23 @@
  *     Required: MDIS user interface library
  *     Switches: NO_MAIN_FUNC	(for systems with one namespace)
  *
- *-------------------------------[ History ]---------------------------------
- *
- * $Log: m36_simp.c,v $
- * Revision 1.7  2009/09/23 17:48:23  MRoth
- * R: Porting to MDIS5
- * M: added support for 64bit (MDIS_PATH)
- *
- * Revision 1.6  2002/09/03 09:23:48  UFranke
- * bugfix:
- *   - m36_simp was defined twice for VxWorks
- *
- * Revision 1.5  2002/06/13 13:59:57  kp
- * cosmetics
- *
- * Revision 1.4  1998/11/27 13:38:36  see
- * hex output format was wrong
- *
- * Revision 1.3  1998/11/26 16:18:32  Schmidt
- * now reads all channels
- *
- * Revision 1.2  1998/11/18 14:43:09  see
- * Usage: function description was empty
- *
- * Revision 1.1  1998/11/17 15:30:44  Schmidt
- * Added by mcvs
- *
  *---------------------------------------------------------------------------
  * (c) Copyright 1998 by MEN mikro elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #include <stdio.h>
 #include <string.h>

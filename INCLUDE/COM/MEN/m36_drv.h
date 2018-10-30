@@ -13,26 +13,23 @@
  *     Switches: _ONE_NAMESPACE_PER_DRIVER_
  *               _LL_DRV_
  *
- *-------------------------------[ History ]---------------------------------
- *
- * $Log: m36_drv.h,v $
- * Revision 2.4  2009/09/23 17:48:32  MRoth
- * R: driver ported to MDIS5, new MDIS_API and men_typs
- * M: for backward compatibility to MDIS4 optionally define new types
- *
- * Revision 2.3  2007/12/10 14:48:38  ts
- * added internal SetStats M36_FLASH_ERASE, M36_REG_DUMP, M36_GET_RAWDAT for
- * calibration
- *
- * Revision 2.2  2002/06/13 14:00:03  kp
- * support swapped variant
- *
- * Revision 2.1  1998/11/17 10:04:55  Schmidt
- * Added by mcvs
- *
  *---------------------------------------------------------------------------
  * (c) Copyright 1998 by MEN mikro elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #ifndef _M36_DRV_H
 #define _M36_DRV_H

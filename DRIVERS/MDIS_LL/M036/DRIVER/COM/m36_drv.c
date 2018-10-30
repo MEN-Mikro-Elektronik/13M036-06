@@ -61,55 +61,23 @@
  *     Required: ---
  *     Switches: _ONE_NAMESPACE_PER_DRIVER_
  *
- *-------------------------------[ History ]---------------------------------
- *
- * $Log: m36_drv.c,v $
- * Revision 1.11  2010/09/21 17:47:59  ts
- * R: channel and code mismatch in Prototype declaration of GetStat/SetStat
- * M: corrected copy/paste error
- *
- * Revision 1.10  2009/09/23 17:48:21  MRoth
- * R: Porting to MDIS5 (according porting guide rev. 0.7)
- * M: a) added support for 64bit (Set/GetStat prototypes, m_read calls)
- *    b) added casts to avoid compiler warnings
- *    c) put all MACCESS macros conditionals in brackets
- *
- * Revision 1.9  2008/01/10 14:54:12  ts
- * load PLD only if module is M36, not on M36N
- * Cosmetics, comments added.
- *
- * Revision 1.8  2007/12/10 14:42:51  ts
- * Flash routines for Calibration added
- * support M36 and M36N mod ids
- *
- * Revision 1.7  2004/04/15 12:19:47  cs
- * Minor modifications for MDIS4/2004 conformity
- *       some typecasts for win2k compliance
- *
- * Revision 1.6  2002/07/25 16:12:07  DSchmidt
- * Calibrate(): added timeout to prevent deadlook if a M36 module doesn't work
- *
- * Revision 1.5  2002/06/13 13:59:52  kp
- * support swapped variant
- * all symbols now static (except GetEntry)
- *
- * Revision 1.4  1998/11/26 16:18:22  Schmidt
- * M36_Init : descriptor entry SAMPLE_ALL added
- * M36_Irq  : performance improved
- *
- * Revision 1.3  1998/11/18 14:43:06  see
- * missing MBUF_Ident and M36_PldIdent added to idFuncTbl
- *
- * Revision 1.2  1998/11/18 11:40:10  see
- * M36_GetStat: M36_EXT_PIN: value assignment caused compiler error
- * PldLoad: return(0) removed, since void
- *
- * Revision 1.1  1998/11/17 10:04:03  Schmidt
- * Added by mcvs
- *
  *---------------------------------------------------------------------------
  * (c) Copyright 1998 by MEN mikro elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #define _NO_LL_HANDLE		/* ll_defs.h: don't define LL_HANDLE struct */
 
