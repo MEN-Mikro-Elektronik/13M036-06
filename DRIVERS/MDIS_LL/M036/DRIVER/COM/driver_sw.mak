@@ -7,21 +7,21 @@
 #
 #    Description: makefile descriptor for M36 (swapped)
 #
-#---------------------------------[ History ]---------------------------------
-#
-#   $Log: driver_sw.mak,v $
-#   Revision 1.3  2002/07/25 16:12:04  DSchmidt
-#   m36_pld.h added
-#
-#   Revision 1.2  2002/06/13 16:35:33  kp
-#   fixed missing m36_pld and mbuf lib
-#
-#   Revision 1.1  2002/06/13 13:59:51  kp
-#   Initial Revision
-#
 #-----------------------------------------------------------------------------
-#   (c) Copyright 2002 by MEN mikro elektronik GmbH, Nuernberg, Germany
+#   Copyright (c) 2002-2019, MEN Mikro Elektronik GmbH
 #*****************************************************************************
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 MAK_NAME=m36_sw
 
