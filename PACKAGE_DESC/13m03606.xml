@@ -208,9 +208,9 @@
 						<value>3</value>
 						<description>Gain 8</description>
 					</choise>
-                    <choise>
-                        <value>4</value>
-                        <description>Gain 16 (only M36N)</description>
+					<choise>
+						<value>4</value>
+						<description>Gain 16 (only M36N)</description>
 					</choise>
 				</choises>
 			</setting>
