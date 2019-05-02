@@ -1,6 +1,6 @@
 /****************************************************************************
  ************                                                    ************
- ************                 M 3 6 _ R E A D                    ************
+ ************                 M 3 6 _ T E S T                    ************
  ************                                                    ************
  ****************************************************************************
  *
@@ -13,27 +13,23 @@
  *     Required: usr_oss.l usr_utl.l
  *     Switches: -
  *
- *-------------------------------[ History ]---------------------------------
- *
- * $Log: m36_test.c,v $
- * Revision 1.4  2009/09/23 17:48:29  MRoth
- * R: Porting to MDIS5
- * M: added support for 64bit (MDIS_PATH)
- *
- * Revision 1.3  2004/04/15 12:20:02  cs
- * Minor modifications for MDIS4/2004 conformity
- *       added stdlib.h and string.h
- *       replaced function _itoa by sprintf for ANSI compliance
- *
- * Revision 1.2  2002/07/25 16:12:15  DSchmidt
- * cosmetics
- *
- * Revision 1.1  2000/04/11 14:43:18  Schmidt
- * Initial Revision
- *
  *---------------------------------------------------------------------------
- * (c) Copyright 2000 by MEN mikro elektronik GmbH, Nuernberg, Germany
+ * Copyright (c) 2000-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
