@@ -5,8 +5,6 @@
  ****************************************************************************
  *
  *       Author: ds
- *        $Date: 2009/09/23 17:48:23 $
- *    $Revision: 1.7 $
  *
  *  Description: Simple example program for the M36 driver.
  *               Configure and read all channels.
@@ -40,6 +38,8 @@
 #include <MEN/usr_oss.h>
 #include <MEN/usr_utl.h>
 #include <MEN/m36_drv.h>
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*--------------------------------------+
 |   PROTOTYPES                          |

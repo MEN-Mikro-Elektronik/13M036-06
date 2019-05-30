@@ -1,11 +1,9 @@
 /*********************  P r o g r a m  -  M o d u l e ***********************
  *
  *         Name: m36_drv.c
- *      Project: M36 module driver (MDIS V4.x)
+ *      Project: M36 module driver 
  *
  *       Author: ds
- *        $Date: 2010/09/21 17:47:59 $
- *    $Revision: 1.11 $
  *
  *  Description: Low level driver for M36 modules
  *
@@ -251,6 +249,8 @@ typedef struct {
 /* include files which need LL_HANDLE */
 #include <MEN/ll_entry.h>   /* low level driver jumptable  */
 #include <MEN/m36_drv.h>    /* M36 driver header file */
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 
 /*-----------------------------------------+

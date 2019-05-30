@@ -3,8 +3,6 @@
  *         Name: m36_drv.h
  *
  *       Author: ds
- *        $Date: 2009/09/23 17:48:32 $
- *    $Revision: 2.4 $
  *
  *  Description: Header file for M36 driver
  *               - M36 specific status codes

@@ -5,8 +5,6 @@
  ****************************************************************************
  *
  *       Author: ds
- *        $Date: 2014/12/03 11:52:57 $
- *    $Revision: 1.8 $
  *
  *  Description: Configure and read M36 input channels (blockwise)
  *
@@ -40,6 +38,8 @@
 #include <MEN/usr_utl.h>
 #include <MEN/mdis_api.h>
 #include <MEN/m36_drv.h>
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*--------------------------------------+
 |   DEFINES                             |
@@ -96,7 +96,7 @@ static void usage(void)
 	printf("    -h           install buffer highwater signal      [no]\n");
 	printf("    -l           loop mode                            [no]\n");
 	printf("\n");
-	printf("(c) 1998 by MEN mikro elektronik GmbH\n\n");
+	printf("Copyright (c) 1998-2019, MEN Mikro Elektronik GmbH\n%s\n", IdentString);
 }
 
 /********************************* main *************************************

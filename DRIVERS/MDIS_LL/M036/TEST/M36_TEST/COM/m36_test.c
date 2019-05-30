@@ -5,8 +5,6 @@
  ****************************************************************************
  *
  *       Author: ds
- *        $Date: 2009/09/23 17:48:29 $
- *    $Revision: 1.4 $
  *
  *  Description: M36 test program for simple read operations
  *
@@ -40,6 +38,8 @@
 #include <MEN/usr_utl.h>
 #include <MEN/mdis_api.h>
 #include <MEN/m36_drv.h>
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*--------------------------------------+
 |   DEFINES                             |
@@ -98,7 +98,7 @@ static void usage(void)
 	printf("                  2 = ampere (only for gain factor x8)\n");
 	printf("    -l           loop mode                                [no]\n");
 	printf("\n");
-	printf("(c) 2000 by MEN mikro elektronik GmbH\n\n");
+	printf("Copyright (c) 2000-2019, MEN Mikro Elektronik GmbH\n%s\n", IdentString);
 }
 
 /********************************* main *************************************

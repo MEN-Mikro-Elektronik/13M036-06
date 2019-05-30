@@ -1,11 +1,9 @@
 /*********************  P r o g r a m  -  M o d u l e ***********************
  *  
  *         Name: m36_pld.c
- *      Project: M36 module driver (MDIS V4.x)
+ *      Project: M36 module driver 
  *
  *       Author: ds
- *        $Date: 1998/11/17 10:04:07 $
- *    $Revision: 1.1 $
  *
  *  Description: PLD data array and ident function
  *                      
@@ -32,6 +30,8 @@
 */
  
 #include <MEN/men_typs.h>   /* system dependend definitions   */
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 #include "m36_pld.h"		/* local prototypes */
 
 /* M36_PldIdent: return ident string */

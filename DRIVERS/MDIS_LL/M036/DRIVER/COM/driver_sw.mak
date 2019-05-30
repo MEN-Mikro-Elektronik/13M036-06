@@ -1,9 +1,6 @@
 #***************************  M a k e f i l e  *******************************
 #
 #         Author: kp
-#          $Date: 2002/07/25 16:12:04 $
-#      $Revision: 1.3 $
-#            $Id: driver_sw.mak,v 1.3 2002/07/25 16:12:04 DSchmidt Exp $
 #
 #    Description: makefile descriptor for M36 (swapped)
 #
@@ -24,8 +21,13 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 MAK_NAME=m36_sw
+# the next line is updated during the MDIS installation
+STAMPED_REVISION="13M036-06_02_07-4-g8b8bb91-dirty_2019-05-02"
+
+DEF_REVISION=MAK_REVISION=$(STAMPED_REVISION)
 
 MAK_SWITCH=$(SW_PREFIX)MAC_MEM_MAPPED \
+		$(SW_PREFIX)$(DEF_REVISION) \
 		   $(SW_PREFIX)MAC_BYTESWAP \
 		   $(SW_PREFIX)ID_SW
 
