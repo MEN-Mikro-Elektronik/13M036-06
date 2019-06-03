@@ -33,10 +33,12 @@
 
 #include "m36_pld.h"		/* local prototypes */
 
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
+
 /* M36_PldIdent: return ident string */
 char* M36_PldIdent( void )
 {
-     return( "M36 - M36 pld data (m36_2r6.bin): $Id: m36_pld.c,v 1.1 1998/11/17 10:04:07 Schmidt Exp $" ) ;
+     return( (char*) IdentString );
 }
 
 /* M36_PldData: 8107+4 data bytes (m36_2r6.bin) */

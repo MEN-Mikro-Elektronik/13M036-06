@@ -250,7 +250,7 @@ typedef struct {
 #include <MEN/ll_entry.h>   /* low level driver jumptable  */
 #include <MEN/m36_drv.h>    /* M36 driver header file */
 
-
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*-----------------------------------------+
 |  PROTOTYPES                              |
@@ -1584,7 +1584,7 @@ static int32 M36_Info(
  ****************************************************************************/
 static char* Ident( void )
 {
-    return( "M36 - M36 low level driver: $Id: m36_drv.c,v 1.11 2010/09/21 17:47:59 ts Exp $" );
+    return( (char*) IdentString );
 }
 
 /********************************* Cleanup **********************************
