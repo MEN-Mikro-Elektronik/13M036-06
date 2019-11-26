@@ -12,7 +12,7 @@
  *     Switches: -
  *
  *---------------------------------------------------------------------------
- * Copyright (c) 2000-2019, MEN Mikro Elektronik GmbH
+ * Copyright 2000-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
 /*
 * This program is free software: you can redistribute it and/or modify
@@ -98,7 +98,7 @@ static void usage(void)
 	printf("                  2 = ampere (only for gain factor x8)\n");
 	printf("    -l           loop mode                                [no]\n");
 	printf("\n");
-	printf("Copyright (c) 2000-2019, MEN Mikro Elektronik GmbH\n%s\n", IdentString);
+	printf("Copyright 2000-2019, MEN Mikro Elektronik GmbH\n%s\n", IdentString);
 }
 
 /********************************* main *************************************
