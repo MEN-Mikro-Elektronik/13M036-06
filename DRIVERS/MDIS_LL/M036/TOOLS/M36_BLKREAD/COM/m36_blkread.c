@@ -82,7 +82,8 @@ static void usage(void)
 	printf("                  1 = x2\n");
 	printf("                  2 = x4\n");
 	printf("                  3 = x8\n");
-	printf("                  4 = x16 (on-board jumper must be set !)\n");
+	printf("                  4 = x16 (on-board jumper must be set on M36-)\n");
+	printf("                          (nothing to be done on M36N)\n");
 	printf("    -m=<mode>    measuring mode                       [unipolar]\n");
 	printf("                  0=unipolar\n");
 	printf("                  1=bipolar\n");
@@ -258,7 +259,7 @@ int main(int argc, char **argv)
 				goto abort;
 			}
 			/* check for SW gain */
-			if (gain != 4) {
+			if (gain <= 4) {
 				/* set gain */
 				if ((M_setstat(path, M36_CH_GAIN, gain)) < 0) {
 					PrintMdisError("setstat M36_CH_GAIN");
