@@ -71,7 +71,8 @@ static void usage(void)
 	printf("                  1 = x2\n");
 	printf("                  2 = x4\n");
 	printf("                  3 = x8\n");
-	printf("                  4 = x16 (on-board jumper must be set !)\n");
+	printf("                  4 = x16 (on-board jumper must be set on M36-)\n");
+	printf("                          (nothing to be done on M36N)\n");
 	printf("    -m=<mode>    measuring mode              [unipolar]\n");
 	printf("                  0=unipolar\n");
 	printf("                  1=bipolar\n");
@@ -103,7 +104,7 @@ int main(int argc, char **argv)
 	char	*device, *str, *errstr, buf[40];
 	double	volt, curr;
 
-	/*--------------------+
+    /*--------------------+
     |  check arguments    |
     +--------------------*/
 	if ((errstr = UTL_ILLIOPT("c=g=m=t=d=l?", buf))) {	/* check args */
@@ -116,7 +117,7 @@ int main(int argc, char **argv)
 		return(1);
 	}
 
-	/*--------------------+
+    /*--------------------+
     |  get arguments      |
     +--------------------*/
 	for (device=NULL, n=1; n<argc; n++)
@@ -146,15 +147,14 @@ int main(int argc, char **argv)
 
 	gainfac = 1 << gain;		/* calculate gain factor */
 
-	/*--------------------+
+    /*--------------------+
     |  open path          |
     +--------------------*/
 	if ((path = M_open(device)) < 0) {
 		PrintError("open");
 		return(1);
 	}
-
-	/*--------------------+
+    /*--------------------+
     |  config             |
     +--------------------*/
 	/* set measuring mode */
@@ -173,7 +173,7 @@ int main(int argc, char **argv)
 		goto abort;
 	}
 	/* check for SW gain */
-	if (gain != 4) {
+	if (gain <= 4) {
 		/* set gain */
 		if ((M_setstat(path, M36_CH_GAIN, gain)) < 0) {
 			PrintError("setstat M36_CH_GAIN");
@@ -194,7 +194,7 @@ int main(int argc, char **argv)
 	printf("measuring mode      : %s\n",(mode==0 ? "unipolar":"bipolar"));
 	printf("trigger mode        : %s\n\n",(trig==0 ? "intern":"extern"));
 
-	/*--------------------+
+    /*--------------------+
     |  read               |
     +--------------------*/
 	do {
@@ -234,7 +234,7 @@ int main(int argc, char **argv)
 		UOS_Delay(100);
 	} while(loopmode && UOS_KeyPressed() == -1);
 
-	/*--------------------+
+    /*--------------------+
     |  cleanup            |
     +--------------------*/
 	abort:
